@@ -11,8 +11,8 @@
   --color-cream: hsl(30, 38%, 92%);
   --color-blac: hsl(212, 21%, 14%);
   --text-rem: clamp(14px, 2.5vw , 16px);
-  --w-dynamic: clamp(320px, 90%, 600px);
-  --breakpoint-md: 590px;
+  --w-dynamic: clamp(320px, 90%, 800px);
+  --breakpoint-md: 550px;
   --font-Montserrat: "Montserrat", system-ui;
   --font-Fraunces: "Fraunces", system-ui;
 }
