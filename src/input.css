@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
@@ -10,8 +8,8 @@
   --color-grey: hsl(228, 12%, 48%);
   --color-cream: hsl(30, 38%, 92%);
   --color-blac: hsl(212, 21%, 14%);
-  --text-rem: clamp(14px, 2.5vw , 16px);
-  --w-dynamic: clamp(320px, 90%, 800px);
+  --text-rem: clamp(14px, 2.5vw , 18px);
+  --w-dynamic: clamp(320px, 90%, 640px);
   --breakpoint-md: 550px;
   --font-Montserrat: "Montserrat", system-ui;
   --font-Fraunces: "Fraunces", system-ui;
