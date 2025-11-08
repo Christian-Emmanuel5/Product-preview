@@ -4,17 +4,9 @@
 
 @theme {
   --color-green-700: hsl(158, 42%, 18%);
-  --color-green-500: hsl(158, 36%, 37%);
-  --color-grey: hsl(228, 12%, 48%);
-  --color-cream: hsl(30, 38%, 92%);
-  --color-blac: hsl(212, 21%, 14%);
-  --text-rem: clamp(14px, 2.5vw , 18px);
+  --text-rem: clamp(14px, 2vw , 16px);
   --w-dynamic: clamp(320px, 90%, 640px);
   --breakpoint-md: 550px;
   --font-Montserrat: "Montserrat", system-ui;
   --font-Fraunces: "Fraunces", system-ui;
-}
-
-* {
-  @apply box-border;
 }

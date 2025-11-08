@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.16 | MIT License | https://tailwindcss.com */
 @import "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or
@@ -22,19 +22,18 @@
     --font-mono:
       ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-green-500: #3c8067;
     --color-green-700: #1b4133;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-grey: #6c7289;
-    --color-cream: #f2ebe3;
-    --color-blac: #1c232b;
-    --text-rem: clamp(14px, 2.5vw, 18px);
+    --text-rem: clamp(14px, 2vw, 16px);
     --w-dynamic: clamp(320px, 90%, 640px);
     --font-Montserrat: "Montserrat", system-ui;
     --font-Fraunces: "Fraunces", system-ui;
@@ -310,6 +309,9 @@
   .inline {
     display: inline;
   }
+  .table {
+    display: table;
+  }
   .h-full {
     height: 100%;
   }
@@ -353,11 +355,11 @@
     border-top-left-radius: var(--radius-2xl);
     border-top-right-radius: var(--radius-2xl);
   }
-  .bg-cream {
-    background-color: var(--color-cream);
+  .bg-\[\#3c8067\] {
+    background-color: #3c8067;
   }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
+  .bg-\[\#f2ebe3\] {
+    background-color: #f2ebe3;
   }
   .bg-white {
     background-color: var(--color-white);
@@ -365,8 +367,8 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-  .p-\[1\.5rem\] {
-    padding: 1.5rem;
+  .p-\[1\.8rem\] {
+    padding: 1.8rem;
   }
   .text-center {
     text-align: center;
@@ -380,6 +382,12 @@
   .text-\[0\.8rem\] {
     font-size: 0.8rem;
   }
+  .text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+  .text-\[2\.2rem\] {
+    font-size: 2.2rem;
+  }
   .text-\[2rem\] {
     font-size: 2rem;
   }
@@ -390,22 +398,34 @@
     --tw-leading: 1;
     line-height: 1;
   }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
   }
   .tracking-\[0\.3rem\] {
     --tw-tracking: 0.3rem;
     letter-spacing: 0.3rem;
   }
-  .text-blac {
-    color: var(--color-blac);
+  .text-\[\#1c232b\] {
+    color: #1c232b;
   }
-  .text-green-500 {
-    color: var(--color-green-500);
+  .text-\[\#3c8067\] {
+    color: #3c8067;
   }
-  .text-grey {
-    color: var(--color-grey);
+  .text-\[\#6c7289\] {
+    color: #6c7289;
   }
   .text-white {
     color: var(--color-white);
@@ -431,8 +451,8 @@
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .md\:gap-\[0\.9rem\] {
-      gap: 0.9rem;
+    .md\:gap-\[0\.5rem\] {
+      gap: 0.5rem;
     }
     .md\:rounded-t-none {
       border-top-left-radius: 0;
@@ -445,10 +465,10 @@
     .md\:bg-green-700 {
       background-color: var(--color-green-700);
     }
+    .md\:p-\[1\.6rem\] {
+      padding: 1.6rem;
+    }
   }
-}
-* {
-  box-sizing: border-box;
 }
 @property --tw-leading {
   syntax: "*";
@@ -461,4 +481,4 @@
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
-} 
+}
